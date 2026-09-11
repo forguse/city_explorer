@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="light">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="mobile-web-app-capable" content="yes" />
+
+  <!-- SEO 描述 -->
+  <title>LineTrip 线旅 - 城市探索者</title>
+  <meta name="description" content="LineTrip 线旅是一款城市探索应用，带你发现城市中的隐藏任务、结识志同道合的探索者，开启属于你的城市冒险之旅。" />
+  <meta name="keywords" content="城市探索,线旅,LineTrip,城市冒险,任务探索,社交,旅行" />
+  <meta name="author" content="LineTrip" />
+
+  <!-- Open Graph / 社交分享 -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="LineTrip 线旅 - 城市探索者" />
+  <meta property="og:description" content="发现城市中的隐藏任务，结识志同道合的探索者，开启属于你的城市冒险之旅。" />
+  <meta property="og:image" content="/images/logo.png" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/images/logo.png" />
+  <link rel="apple-touch-icon" href="/images/logo.png" />
+
+  <!-- PWA -->
+  <link rel="manifest" href="/manifest.json" />
+  <meta name="theme-color" content="#16a34a" />
+
+  <!-- Content Security Policy: 限制资源来源，防止 XSS 和资源劫持 -->
+  <meta http-equiv="Content-Security-Policy" content="
+    default-src 'self';
+    script-src 'self' 'unsafe-inline' 'unsafe-eval';
+    style-src 'self' 'unsafe-inline' https://fonts.loli.net https://gstatic.loli.net;
+    font-src 'self' https://fonts.loli.net https://gstatic.loli.net data:;
+    img-src 'self' data: blob: https: http:;
+    connect-src 'self' ws: wss: https: http:;
+    media-src 'self' https: http:;
+  " />
+  <link rel="preconnect" href="https://fonts.loli.net" />
+  <link rel="preconnect" href="https://gstatic.loli.net" crossorigin />
+  <link
+    href="https://fonts.loli.net/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;700;900&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.loli.net/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+    rel="stylesheet" />
+
+
+  <!-- 已移除 importmap -->
+
+  <link rel="stylesheet" href="/index.css" />
+</head>
+
+<body class="bg-gray-50 dark:bg-gray-900 font-body flex sm:justify-center min-h-screen selection:bg-primary/20">
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+
+</html>
